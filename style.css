@@ -1,0 +1,116 @@
+/* a minimalist set of CSS resets */
+
+/* default to border-box */
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* adjust typography defaults */
+body {
+  margin: 1rem;
+  font-family: sans-serif;
+  line-height: 1.5;
+  background-color: rgb(30,50,60);
+  color: white;
+}
+
+h1 {
+  font-family: 'Pathway Gothic One', sans-serif;
+  color: #feda4a;
+}
+
+p {
+  font-family: 'Pathway Gothic One', sans-serif;
+  color: #feda4a;  
+}
+
+button {
+  padding: 10px;
+  border-radius: 10px;  
+}
+
+.hidden {
+  display: none;
+}
+
+
+#gameButtonArea > button {
+  width:200px;
+  height:200px;
+  margin:2px;
+}
+
+
+#button1 {
+    background: slategrey;
+}
+#button1:active, #button1.lit {
+    background: powderblue
+}
+
+#button2 {
+    background: slategrey;
+}
+#button2:active, #button2.lit {
+    background: powderblue
+}
+
+#button3 {
+    background: slategrey;
+}
+#button3:active, #button3.lit {
+    background: powderblue
+}
+
+#button4 {
+    background: slategrey;
+}
+#button4:active, #button4.lit {
+    background: powderblue
+}
+
+#button5 {
+    background: slategrey;
+}
+#button5:active, #button5.lit {
+    background: powderblue
+}
+
+#button6 {
+    background: slategrey;
+}
+#button6:active, #button6.lit {
+    background: powderblue
+}
+
+#button1:active {
+    background:powderblue;
+}
+#button2:active {
+    background:powderblue;
+}
+#button3:active {
+    background:powderblue;
+}
+#button4:active {
+    background:powderblue;
+}
+#button5:active {
+    background:powderblue;
+}
+#button6:active {
+    background:powderblue;
+}
+
+
+/* images and videos max out at full width */
+img,
+video {
+  height: auto;
+  max-width: 100%;
+}
