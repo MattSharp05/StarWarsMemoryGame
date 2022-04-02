@@ -84,7 +84,7 @@ I also struggled to implement a timer for the guesses. I had to look through sev
 
 ## Interview Recording URL Link
 
-[My 5-minute Interview Recording](your-link-here)
+[My 5-minute Interview Recording](https://www.loom.com/share/081a02311fbd4313bc691f334ab7f0fe)
 
 
 ## License
