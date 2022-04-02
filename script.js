@@ -11,6 +11,8 @@ var volume = 0.5;  //must be between 0.0 and 1.0
 var guessCounter = 0;
 var clueHoldTime = 1000; //how long to hold each clue's light/sound
 var numMistakes = 0
+var timeRemaining;
+var countDown;
 
 
 function generatePattern(){
@@ -21,11 +23,21 @@ function generatePattern(){
 }
 
 
-
+function timer(){
+  countDown = countDown - 1;
+  if (countDown <= -1) {
+    clearInterval(timeRemaining);
+    loseGame();
+    return;
+  }
+  document.getElementById("timer").innerHTML = 
+    "Time Remaining: " + countDown;
+}
 
 
 function startGame(){
     //initialize game variables
+    clearInterval(countDown);
     pattern = []
     progress = 0;
     numMistakes = 0;
@@ -45,36 +57,52 @@ function startGame(){
     document.getElementById("life2").classList.remove("hidden")
     document.getElementById("life3").classList.remove("hidden")
   
+
   
     playClueSequence();
+    setTimeout(() => {
+      document.getElementById("timer").classList.remove("hidden");
+    }, 100);
 }
+
 
 function stopGame(){
     gamePlaying = false;
     // swap the Start and Stop buttons
     document.getElementById("startBtn").classList.remove("hidden");
     document.getElementById("stopBtn").classList.add("hidden");
+    document.getElementById("timer").classList.add("hidden");
+    clearInterval(countDown);
+    clearInterval(timeRemaining);
+    
+  
+
+
 }
 
 
 
 function lightButton(btn){
   document.getElementById("button"+btn).classList.add("lit")
+
 }
 function clearButton(btn){
   document.getElementById("button"+btn).classList.remove("lit")
 }
 
 
+
+
 function playSingleClue(btn){
   if(gamePlaying){
     lightButton(btn);
-    playTone(btn,clueHoldTime);
+    playTone(btn,clueHoldTime);       
     setTimeout(clearButton,clueHoldTime,btn);
   }
 }
 
 function playClueSequence(){
+  clearInterval(timeRemaining);
   guessCounter = 0;
   context.resume() //
   let delay = nextClueWaitTime; //set delay to initial wait time
@@ -84,10 +112,12 @@ function playClueSequence(){
     delay += clueHoldTime 
     delay += cluePauseTime;
     clueHoldTime -= 30
+    countDown =  3*(progress + 2); 
     if(clueHoldTime <=500){
       clueHoldTime = 500
     }
   }
+  timeRemaining = setInterval(timer, 1000)
 }
 
 function loseGame(){
