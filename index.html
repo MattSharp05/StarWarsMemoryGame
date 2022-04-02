@@ -12,59 +12,117 @@
 
     <!-- import the webpage's javascript file -->
     <script src="/script.js" defer></script>
+
   </head>
+      
+
   <body>
     <!-- this is the start of content -->
-    <h1>
-      STAR WARS MEMORY GAME
-    </h1>
-    <p>
-      It is a period of civil war! Rebel spaceships, striking from a hidden base, are about to win their first victory against the evil Galactic Empire!
-    </p>
-    <p>
-      All that is left is for you to enter a secret code that will deploy the missiles that will lead the Rebels to victory!
-    </p>
-    
-    <p>
-      Repeat the patern by pressing the correct buttons before time runs out and without losing all your lives!
-    </p>
-    
-    <p>
-      May the force be with you!
-    </p>
-    
-    <button id="startBtn" onclick="startGame()">
-      Start
-    </button>
-    
-    <button id="stopBtn" class = "hidden" onclick="stopGame()">
-      Stop
-    </button>
-    
-    <p>
-      Number of lives remaining:
-    </p>
-    <img src="https://cdn.glitch.global/8875f842-264f-4bf0-878d-7043372a21ca/heart.png?v=1648065103199" alt="heart" width="50" height="60" id="life1">
-    <img src="https://cdn.glitch.global/8875f842-264f-4bf0-878d-7043372a21ca/heart.png?v=1648065103199" alt="heart" width="50" height="60" id="life2">
-    <img src="https://cdn.glitch.global/8875f842-264f-4bf0-878d-7043372a21ca/heart.png?v=1648065103199" alt="heart" width="50" height="60" id="life3">
-    
-    <p>
-      Time Remaining:
-    </p>
-    <p1 id="time">10</p1>
+
+    <div class="stars">  <div class="twinkling">    
     
     
-    
-    <div id="gameButtonArea">
-      <button id="button1" onclick="guess(1)" onmousedown="startTone(1)" onmouseup="stopTone()"><img src="https://cdn.glitch.global/8875f842-264f-4bf0-878d-7043372a21ca/Yoda?v=1648074566765" alt="img1" width="200" height="200"></button>
-      <button id="button2" onclick="guess(2)" onmousedown="startTone(2)" onmouseup="stopTone()"><img src="https://cdn.glitch.global/8875f842-264f-4bf0-878d-7043372a21ca/R2D2?v=1648074338913" alt="img2" width="200" height="200"></button>
-      <button id="button3" onclick="guess(3)" onmousedown="startTone(3)" onmouseup="stopTone()"><img src="https://cdn.glitch.global/8875f842-264f-4bf0-878d-7043372a21ca/C3P0?v=1648074447234" alt="img3" width="200" height="200"></button>
-      <button id="button4" onclick="guess(4)" onmousedown="startTone(4)" onmouseup="stopTone()"><img src="https://cdn.glitch.global/8875f842-264f-4bf0-878d-7043372a21ca/LukeSkywalker?v=1648074494358" alt="img4" width="200" height="200"></button>
-      <button id="button5" onclick="guess(5)" onmousedown="startTone(5)" onmouseup="stopTone()"><img src="https://cdn.glitch.global/8875f842-264f-4bf0-878d-7043372a21ca/Chewbacca?v=1648074645020" alt="img5" width="200" height="200"></button>
-      <button id="button6" onclick="guess(6)" onmousedown="startTone(6)" onmouseup="stopTone()"><img src="https://cdn.glitch.global/8875f842-264f-4bf0-878d-7043372a21ca/DarthVader?v=1648074387954 alt="img6" width="200" height="200"></button>
+        <h1>
+          STAR WARS MEMORY GAME
+        </h1>
+
+        <p>
+          It is a period of civil war! Rebel spaceships, striking from a hidden base, are about to win their first victory against the evil Galactic Empire!
+        </p>
+        <p>
+          All that is left is for you to enter a secret code that will deploy the missiles that will lead the Rebels to victory!
+        </p>
+
+        <p>
+          Repeat the patern by pressing the correct buttons before time runs out and without losing all your lives!
+        </p>
+
+        <p>
+          May the force be with you!
+        </p>
+
+
+        <div style="text-align:center">
+          <button id="startBtn" onclick="startGame()">
+            Start
+          </button>
+
+          <button id="stopBtn" class = "hidden" onclick="stopGame()">
+            Stop
+          </button>    
+        </div>    
+
+
+      
+        <p>
+          Number of lives remaining:
+        </p>
+
+
+
+        <div style="text-align:center">
+          <img src="https://cdn.glitch.global/8875f842-264f-4bf0-878d-7043372a21ca/heart.png?v=1648065103199" alt="heart" width="50" height="60" id="life1">
+          <img src="https://cdn.glitch.global/8875f842-264f-4bf0-878d-7043372a21ca/heart.png?v=1648065103199" alt="heart" width="50" height="60" id="life2">
+          <img src="https://cdn.glitch.global/8875f842-264f-4bf0-878d-7043372a21ca/heart.png?v=1648065103199" alt="heart" width="50" height="60" id="life3">
+        </div>
+
+        
+
+      
+
+
+
+
+
+
+        <div id="gameButtonArea" style="text-align:center">
+          <button id="button1"
+                  onclick="guess(1)"
+                  onmousedown="startTone(1)"
+                  onmouseup="stopTone()">
+            </button>
+          
+          
+          <button id="button2"
+                  onclick="guess(2)"
+                  onmousedown="startTone(2)"
+                  onmouseup="stopTone()">
+           </button>
+          
+          
+          <button id="button3"
+                  onclick="guess(3)"
+                  onmousedown="startTone(3)"
+                  onmouseup="stopTone()">
+          </button>
+          
+          
+          <button id="button4" 
+                  onclick="guess(4)" 
+                  onmousedown="startTone(4)" 
+                  onmouseup="stopTone()">
+          </button>
+          
+          
+          <button id="button5" 
+                  onclick="guess(5)" 
+                  onmousedown="startTone(5)" 
+                  onmouseup="stopTone()">
+          </button>
+          
+          
+          <button id="button6" 
+                  onclick="guess(6)" 
+                  onmousedown="startTone(6)" 
+                  onmouseup="stopTone()">
+          </button>
+        </div>
+        
+      <div id="timer" class="hidden center"></div>
+
+      
+      </div>  
+          
     </div>
-    
-    
-    
   </body>
 </html>

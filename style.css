@@ -10,29 +10,65 @@ html {
   box-sizing: inherit;
 }
 
+
 /* adjust typography defaults */
+
+.stars, .twinkling{
+  position: absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  width: 100%;
+  height: 100%;
+
+  
+}
+
+@keyframes move-twinkle-back {
+  from {background-position: 0 0;}
+  to {background-position: 10000px 0}
+}
+
+
+
+
 body {
   margin: 1rem;
   font-family: sans-serif;
   line-height: 1.5;
-  background-color: rgb(30,50,60);
   color: white;
+  z-index: 2;
+
+
 }
+
+
 
 h1 {
   font-family: 'Pathway Gothic One', sans-serif;
   color: #feda4a;
+  width: 880px;
+  margin: 0 auto;
+  text-align: center;
 }
 
 p {
   font-family: 'Pathway Gothic One', sans-serif;
   color: #feda4a;  
+  width: 880px;
+  margin: 0 auto;
+  text-align: center;
 }
 
 button {
   padding: 10px;
-  border-radius: 10px;  
+  border-radius: 10px; 
+  height: 34px;
+  
 }
+
+
 
 .hidden {
   display: none;
@@ -48,64 +84,110 @@ button {
 
 #button1 {
     background: slategrey;
+    background-image: url(https://cdn.glitch.global/8875f842-264f-4bf0-878d-7043372a21ca/starwars.png?v=1648606913105);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
 }
 #button1:active, #button1.lit {
-    background: powderblue
+    background: powderblue;
+    background-image: url(https://cdn.glitch.global/8875f842-264f-4bf0-878d-7043372a21ca/Yoda?v=1648074566765);
+    background-size: cover;
 }
 
 #button2 {
     background: slategrey;
+    background-image: url(https://cdn.glitch.global/8875f842-264f-4bf0-878d-7043372a21ca/starwars.png?v=1648606913105);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 #button2:active, #button2.lit {
-    background: powderblue
+    background: powderblue;
+      background-image: url(https://cdn.glitch.global/8875f842-264f-4bf0-878d-7043372a21ca/R2D2?v=1648074338913);
+    background-size: cover;
 }
 
 #button3 {
     background: slategrey;
+    background-image: url(https://cdn.glitch.global/8875f842-264f-4bf0-878d-7043372a21ca/starwars.png?v=1648606913105);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 #button3:active, #button3.lit {
-    background: powderblue
+    background: powderblue;
+    background-image: url(https://cdn.glitch.global/8875f842-264f-4bf0-878d-7043372a21ca/C3P0?v=1648074447234);
+    background-size: cover;
 }
 
 #button4 {
     background: slategrey;
+    background-image: url(https://cdn.glitch.global/8875f842-264f-4bf0-878d-7043372a21ca/starwars.png?v=1648606913105);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 #button4:active, #button4.lit {
-    background: powderblue
+    background: powderblue;
+    background-image: url(https://cdn.glitch.global/8875f842-264f-4bf0-878d-7043372a21ca/LukeSkywalker?v=1648074494358);
+    background-size: cover;
 }
 
 #button5 {
     background: slategrey;
+    background-image: url(https://cdn.glitch.global/8875f842-264f-4bf0-878d-7043372a21ca/starwars.png?v=1648606913105);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 #button5:active, #button5.lit {
-    background: powderblue
+    background: powderblue;
+    background-image: url(https://cdn.glitch.global/8875f842-264f-4bf0-878d-7043372a21ca/Chewbacca?v=1648074645020);
+    background-size: cover;
 }
 
 #button6 {
     background: slategrey;
+    background-image: url(https://cdn.glitch.global/8875f842-264f-4bf0-878d-7043372a21ca/starwars.png?v=1648606913105);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 #button6:active, #button6.lit {
-    background: powderblue
+    background: powderblue;
+    background-image: url(https://cdn.glitch.global/8875f842-264f-4bf0-878d-7043372a21ca/DarthVader?v=1648074387954);
+    background-size: cover;
+    
 }
 
-#button1:active {
-    background:powderblue;
+
+#timer {
+    padding: 10px;
+    border-radius: 10px;
+    width: 200px;
+    background: #feda4a;
+    color: black;
 }
-#button2:active {
-    background:powderblue;
+
+.center {
+margin: auto;
+width: 60%;
+border: 5px solid #feda4a;
+padding: 10px;
 }
-#button3:active {
-    background:powderblue;
+
+.stars{
+  background-image: url("https://cdn.glitch.global/8875f842-264f-4bf0-878d-7043372a21ca/stars.png?v=1648600537650");
+  background-color: #000000;
 }
-#button4:active {
-    background:powderblue;
+
+.twinkling{
+  background-image: url("https://cdn.glitch.global/8875f842-264f-4bf0-878d-7043372a21ca/twinkling.png?v=1648600540399");
+  animation: move-twinkle-back 200s linear infinite;
 }
-#button5:active {
-    background:powderblue;
-}
-#button6:active {
-    background:powderblue;
-}
+
 
 
 /* images and videos max out at full width */
