@@ -47,10 +47,16 @@ The following **additional** features are implemented:
 ## Video Walkthrough (GIF)
 
 If you recorded multiple GIFs for all the implemented features, you can add them here:
+
+Full Walkthrough:
 ![](https://github.com/MattSharp05/StarWarsMemoryGame/blob/main/ezgif.com-gif-maker.gif)
-![](gif2-link-here)
-![](gif3-link-here)
-![](gif4-link-here)
+
+Player loses after 3 mistakes:
+![](https://github.com/MattSharp05/StarWarsMemoryGame/blob/main/3lives.gif)
+
+Player loses after running out of time:
+![](https://github.com/MattSharp05/StarWarsMemoryGame/blob/main/outoftime.gif)
+
 
 ## Reflection Questions
 1. If you used any outside resources to help complete your submission (websites, books, people, etc) list them here. 
