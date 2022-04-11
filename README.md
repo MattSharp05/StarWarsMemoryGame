@@ -39,7 +39,7 @@ The following **additional** features are implemented:
 - [x] Centered everything to the middle of the webpage
 - [x] Implemented a Star Wars theme for the game and updated the style of the buttons, headings and text accordingly
 - [x] Added placeholder images to the button that chages when the button lights up or is clicked
-- [x] Adjusted the time allowed per sequence so plater has a fairer time limit for finding longer patterns
+- [x] Adjusted the time allowed per sequence so player has a more reasonable time limit for finding longer patterns
  
 
 
@@ -49,13 +49,19 @@ The following **additional** features are implemented:
 If you recorded multiple GIFs for all the implemented features, you can add them here:
 
 Full Walkthrough:
+
 ![](https://github.com/MattSharp05/StarWarsMemoryGame/blob/main/ezgif.com-gif-maker.gif)
 
+
 Player loses after 3 mistakes:
+
 ![](https://github.com/MattSharp05/StarWarsMemoryGame/blob/main/3lives.gif)
 
+
 Player loses after running out of time:
+
 ![](https://github.com/MattSharp05/StarWarsMemoryGame/blob/main/outoftime.gif)
+
 
 
 ## Reflection Questions
