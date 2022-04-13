@@ -7,6 +7,7 @@ Submitted by: **Matthew Sharp**
 Time spent: **25** hours spent in total
 
 Link to project: https://glitch.com/edit/#!/handsome-prong-tune?path=script.js%3A15%3A13
+
 Try it yourself: https://handsome-prong-tune.glitch.me/
 
 ## Required Functionality
